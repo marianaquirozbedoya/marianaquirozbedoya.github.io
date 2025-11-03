@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariana Quiroz Bedoya | Portafolio</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos básicos -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Encabezado */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(13,17,23,0.85);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 10;
+    }
+    header h1 { font-size: 1.2rem; color: #58a6ff; font-weight: 600; }
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #58a6ff; }
+
+    /* Secciones */
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Hero */
+    #hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      color: #a1a1aa;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: #58a6ff;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #1f6feb; }
+
+    /* Sobre mí */
+    #sobre h2, #proyectos h2, #contacto h2 {
+      font-size: 2rem;
+      color: #58a6ff;
+      margin-bottom: 1rem;
+    }
+    #sobre p { margin-bottom: 1rem; }
+
+    /* Tecnologías */
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .tech {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      color: #c9d1d9;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    /* Animaciones suaves */
+    section, header { transition: all 0.4s ease; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mariana Quiroz Bedoya</h1>
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hola, soy <span style="color:#58a6ff;">Mariana Quiroz Bedoya</span></h2>
+    <p>🎓 Estudiante del Grado Superior en Desarrollo de Aplicaciones Web (DAW).<br>
+    💻 Me interesa el desarrollo web y estoy aprendiendo a crear sitios y aplicaciones modernas.</p>
+    <a href="#sobre" class="btn">Conóceme</a>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Tengo 18 años y me apasiona aprender nuevas tecnologías para mejorar mis habilidades en programación.</p>
+    <p>Busco seguir creciendo como desarrolladora y crear proyectos útiles, bien estructurados y con un enfoque moderno.</p>
+
+    <h3 style="margin-top:1.5rem; color:#e6edf3;">Tecnologías que uso</h3>
+    <div class="tech-list">
+      <div class="tech">Java</div>
+      <div class="tech">XML</div>
+      <div class="tech">HTML</div>
+      <div class="tech">GitHub</div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Aquí pronto mostraré algunos de mis trabajos y ejercicios destacados del ciclo de DAW.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 Puedes escribirme a: <a href="mailto:marianaquirozbedoya@example.com" style="color:#58a6ff;">marianaquirozbedoya@example.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Mariana Quiroz Bedoya — Todos los derechos reservados.
+  </footer>
+</body>
+</html>
